@@ -38,20 +38,30 @@ init(Mb,1);
 
 // Fonctions
 boy_leaves_bathroom(){
-  P(Mb);
   P(boys);
-  if(nbPers==0){
-    P(bathroom));
-    V(s);
-    V(s);
-
+  nbPers--;
+  if (nbBoys==0) {
+     V(bathroom);  
   }
-  V(oys);
-
+  V(boys);
 }
 
 boy_want_to_use_bathroom(){
 
+    P(Mb);
+    P(boys);
+    if(nbPers==0){
+      P(bathroom));
+      V(s);
+      V(s);
+
+    }
+    V(boy);
+    if (girls>0){
+      P(S);
+    }
+    nbPers++;
+    V(Mb);
 }
 girl_leaves_bathroom(){
 
